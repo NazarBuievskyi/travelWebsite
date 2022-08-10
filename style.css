@@ -49,6 +49,10 @@ button {
     font-size: 1.8rem;
     cursor: pointer;
     font-weight: 500;
+    transition: background 0.5s ease-in-out;
+}
+button:hover {
+    background-color: #194173;
 }
 
 
@@ -104,6 +108,129 @@ nav ul {
 }
 
 
+
+
+/* Benefits section */
+.locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url('./img/new-york-page.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-head h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+    padding: 3rem 0rem;
+    background: linear-gradient(#131c27, #9c6259);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Cloud possition */
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 70%;
+    pointer-events: none;
+}
+
+.moving-clou-1{
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-clou-2{
+    top: 8%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+}
+
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* Benefits section */
+
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 7rem;
+    margin: 2rem;
+}
+
+.card h4 {
+    padding: 1rem;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.card-icon {
+    background-color: #343c44;
+}
+
+
+
+
+
+
+
+
+/* Media query */
 @media screen and (max-width: 920px){
     html {
         font-size: 35%;
@@ -115,4 +242,19 @@ nav ul {
         text-align: center;
         padding: 1rem;
     }
+    .cloud  {
+        width: 100rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    
+    .locations-head h3 {
+        background: rgba(0, 0, 0, 0.5);
+        /* -webkit-background-clip: text; */
+        -webkit-text-fill-color: white;
+    }
+
 }
