@@ -13,7 +13,7 @@
 <body>
     <header class="main-head">
         <nav>
-            <h1 class="logo">Travel</h1>
+            <h1 class="logo"><a href="">Travel</a> </h1>
             <ul>
                 <li><a href="#locations">Location</a></li>
                 <li><a href="#benefits">Benefits</a></li>
@@ -22,12 +22,12 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero">
         <h2>Travel Beyond Limits.</h2>
         <h3>Start your travel at an affordable price with Travelly <br/> Contacr us now bellow.</h3>
         <button>Book Now</button>
     </section>
-    <section class="locations">
+    <section id="locations">
         <header class="locations-head">
             <h2>The Perfect Treveling Experience.</h2>
             <h3>We cover everything from picking the perfect hotel, <br/>
@@ -37,7 +37,7 @@
             <img src="./img/cloud.png" class="moving-clou-2 cloud">
         </header>
     </section>
-    <secton class="benefits">
+    <secton id="benefits">
         <header class="benefits-head">
         <h2>The Perfect Travel</h2>
             <h3>We cover everything from picking the perfect hotel, <br/>
@@ -67,6 +67,35 @@
             </div>
         </div>
     </secton>
+    <section id="contact">
+        <div class="form-wrapper">
+            <header class="form-head">
+                <h2>Contact US</h2>
+                <form >
+                    <div class="name-form">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                        </div>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </header>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <h4>Travel &copy;</h4>
+            <ul>
+                <li><a href="#"><img src="./icons/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="./icons/youtube.svg" alt="youtube"></a></li>
+                <li><a href="#"><img src="./icons/instagram.svg" alt="instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
